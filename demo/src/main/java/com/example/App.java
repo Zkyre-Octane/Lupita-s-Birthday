@@ -57,7 +57,7 @@ public class App {
 
   public static void main(final String[] args) {
     String pathToFile =
-      "D:/dd/Lupita's  Birthday/demo/src/main/java/com/example/birthdayOnlyForTesting.json";
+      "D:/dd/Lupita's  Birthday/demo/src/main/java/com/example/birthday.json";
 
     // initialize the hash map
     initializeMap(pathToFile);
