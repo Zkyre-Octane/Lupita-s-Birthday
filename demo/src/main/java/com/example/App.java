@@ -11,7 +11,7 @@ public class App {
     private static HashMap<String, String> birthdayMap = new HashMap<>();
 
     // Read JSON file and parse into a list of BirthdayData objects
-    public static void parseJsonFile(String fileName) {
+    public static JSONArray parseJsonFile(String fileName) {
        // JSON parser object to parse read file
     JSONParser jsonParser = new JSONParser();
 
@@ -35,7 +35,7 @@ public class App {
  
     // students do not have to change this function
   public static void initializeMap(final String pathToFile) {
-    JSONArray jsonData = readJSONArrayFile(pathToFile);
+    JSONArray jsonData = parseJsonFile(pathToFile);
 
     // loop over list
     String birthday, name;
@@ -57,7 +57,7 @@ public class App {
 
   public static void main(final String[] args) {
     String pathToFile =
-      "D:/dd/Lupita's  Birthday/demo/src/main/java/com/example/birthday.json";
+      "D:/dd/Lupita's  Birthday/demo/src/main/java/com/example/birthdayOnlyForTesting.json";
 
     // initialize the hash map
     initializeMap(pathToFile);
