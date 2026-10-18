@@ -70,8 +70,13 @@ public class App {
     System.out.print("Enter a name:");
     String name = input.nextLine();
 
-     // print user input
-    System.out.println("name = " + name);
+    // Search for the birthday
+    String birthday = birthdayMap.get(name);
+    if (birthday != null) {
+        System.out.println("Birthday: " + birthday);
+    } else {
+        System.out.println("Birthday unknown.");
+    }
 
     // close the scanner
     input.close();
