@@ -48,10 +48,6 @@ public class App {
 
       // add the name and birthday in to a hashmap
       birthdayMap.put(name, birthday);
-
-      // print the names and birthdays
-      System.out.println("name = " + name);
-      System.out.println("birthday = " + birthday);
     }
   }
 
